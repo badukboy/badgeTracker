@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +15,7 @@ body {
     line-height: 1.42857143;
     color: #333;
     margin: 0;
+    height: 100%;
 }
 
 .header {
@@ -91,9 +92,11 @@ body {
 }
 
 .content-wrapper .main-content {
-    width: 610px;
+    width: 100%;
     float: left;
     padding: 10px;
+    min-height:100%;
+    position: relative;
 }
 
 .content-wrapper .main-content .post {
@@ -187,4 +190,24 @@ body {
     box-shadow: 4px 2px 6px rgba(0,0,0, 0.5);
     -moz-box-shadow: 4px 2px 6px rgba(0,0,0, 0.5);
     -webkit-box-shadow: 4px 2px 6px rgba(0,0,0, 0.5);
+}
+#loginWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 500px;
+  width: 500px;
+  transform: translate(-500px, -500px);
+}
+.footer {
+    position: relative;
+    height: 50px;
+    width: 960px;
+    -webkit-border-bottom-left-radius: 15px;
+    -webkit-border-botoom-right-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    -moz-border-radius-bottomright: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
 }
