@@ -13,3 +13,18 @@ function init() {
 function filter(name) {
 	$container.isotope({ filter: name });
 }
+function getBadges(badgeName) {
+   if(!badgeName) {
+   	badgeName = "all"
+   }
+   $.ajax({
+    type: 'POST',
+    url: 'php/getBadges.php',
+    data: {
+        badge: badgeName
+    },
+    success: function (data) {
+    	
+    }
+    });
+}

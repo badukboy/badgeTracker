@@ -17,6 +17,7 @@
 	</div>
 	<div class="content-wrapper">
 	    <div class="main-content">
+			<h1>Badges</h1>
 			<div id="container">
 			  <div class="item transition metal">Metal</div>
 			  <div class="item post-transition metal">Metal</div>
@@ -26,7 +27,7 @@
 			  <div class="item halogen nonmetal">Non Metal</div> 
 			  <div class="item alkaline-earth metal">Metal</div>
 			</div>
-			<button onclick = "filter('.metal')">Filter</button>
+			<button onclick = "test()">Filter</button>
 	    </div>
     </div>
     <div style="clear: both;"></div>
